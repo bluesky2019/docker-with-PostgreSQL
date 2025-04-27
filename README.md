@@ -26,10 +26,12 @@ Operações Disponíveis:
 
 Criar um novo banco de dados:
 sql
+
 CREATE DATABASE meu_banco;
 Conectar a um banco:
 sql
 \c meu_banco
+
 Criar tabelas:
 sql
 CREATE TABLE clientes (
@@ -38,16 +40,19 @@ CREATE TABLE clientes (
     email VARCHAR(100) UNIQUE,
     data_cadastro DATE DEFAULT CURRENT_DATE
 );
+
 Inserir dados:
 sql
 INSERT INTO clientes (nome, email) 
 VALUES ('João Silva', 'joao@empresa.com');
+
 Consultas:
 sql
 SELECT * FROM clientes;
 Sair do shell:
 sql
 \q
+
 Como Personalizar:
 Para alterar credenciais, modifique as variáveis de ambiente no comando docker run:
 
